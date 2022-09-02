@@ -27,6 +27,9 @@ public class BalancedBrackets {
 
 
             for (char ch : str.toCharArray()) {
+                if(brackets < 0){
+                    return false;
+                }
                 if (ch == '[') {
                     brackets++;
 
