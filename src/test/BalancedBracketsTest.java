@@ -56,10 +56,10 @@ public class BalancedBracketsTest {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[[[][]]]"));
     }
 
-//    @Test
-//    public void emptyStringReturnsTrue() {
-//        assertTrue(BalancedBrackets.hasBalancedBrackets(""));
-//    }
+    @Test
+    public void emptyStringReturnsFalse() {
+        assertFalse(BalancedBrackets.hasBalancedBrackets(""));
+    }
     @Test
     public void bracketsWithPizzaReturnsTrue() {
         assertTrue(BalancedBrackets.hasBalancedBrackets("[ pizza ]"));
