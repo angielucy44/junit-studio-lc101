@@ -34,7 +34,7 @@ public class BalancedBrackets {
                     brackets++;
 
                 }
-                if (ch == ']') {
+                else if (ch == ']') {
                     brackets--;
                 }
             }
